@@ -13,6 +13,8 @@ namespace TDD
         public static int liczba_min_b;
         public static int liczba_min_c;
         public static int mina;
+        public static int boola;
+        public static bool Test;
 
         public static int max(int a, int b, int c)
         {
@@ -44,9 +46,9 @@ namespace TDD
         public static bool isPositive(int a)
         {
             if (a > 0)
-                return true;
+                return Test = true;
             else
-                return false;
+                return Test = false;
         }
 
 
@@ -54,6 +56,7 @@ namespace TDD
         {
             max(liczba_max_a, liczba_max_b, liczba_max_c);
             min(liczba_min_a, liczba_min_b, liczba_min_c);
+            isPositive(boola);
         }
     }
 }

@@ -31,5 +31,14 @@ namespace TDDtest
             TDDLibrary.min(TDDLibrary.liczba_min_a, TDDLibrary.liczba_min_b, TDDLibrary.liczba_min_c);
             Assert.AreEqual(TDDLibrary.mina, expected);
         }
+        [Test]
+        public void Test_boola()
+        {
+            TDDLibrary.boola = 3;
+            TDDLibrary.isPositive(TDDLibrary.boola);
+            Assert.IsTrue(TDDLibrary.Test);
+
+        }
     }
+
 }
