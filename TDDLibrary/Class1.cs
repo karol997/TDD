@@ -24,6 +24,15 @@ namespace TDD
             return maximum;
         }
 
+        public static int min(int a, int b, int c)
+        {
+            int minimum = 0;
+            if ((a < b) && (a < c)) minimum = a;
+            if ((b < a) && (b < c)) minimum = b;
+            if ((c < a) && (c < b)) minimum = c;
+            return minimum;
+        }
+
         public static void Main()
         {
             max(liczba_max_a, liczba_max_b, liczba_max_c);
