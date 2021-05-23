@@ -41,6 +41,15 @@ namespace TDD
             return minimum;
         }
 
+        public static bool isPositive(int a)
+        {
+            if (a > 0)
+                return true;
+            else
+                return false;
+        }
+
+
         public static void Main()
         {
             max(liczba_max_a, liczba_max_b, liczba_max_c);
