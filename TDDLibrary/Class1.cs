@@ -9,6 +9,11 @@ namespace TDD
         public static int liczba_max_c;
         public static int maxa;
 
+        public static int liczba_min_a;
+        public static int liczba_min_b;
+        public static int liczba_min_c;
+        public static int mina;
+
         public static int max(int a, int b, int c)
         {
             int maximum = 0;
@@ -27,15 +32,19 @@ namespace TDD
         public static int min(int a, int b, int c)
         {
             int minimum = 0;
+            int value_min = 0;
             if ((a < b) && (a < c)) minimum = a;
             if ((b < a) && (b < c)) minimum = b;
             if ((c < a) && (c < b)) minimum = c;
+            value_min = value_min + minimum;
+            mina = value_min;
             return minimum;
         }
 
         public static void Main()
         {
             max(liczba_max_a, liczba_max_b, liczba_max_c);
+            min(liczba_min_a, liczba_min_b, liczba_min_c);
         }
     }
 }
